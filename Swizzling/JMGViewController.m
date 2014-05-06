@@ -14,16 +14,11 @@
 
 @implementation JMGViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+- (IBAction)showViewController1:(id)sender {
+    [self performSegueWithIdentifier:@"segue1" sender:nil];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)showViewController2:(id)sender {
+    [self performSegueWithIdentifier:@"segue2" sender:nil];
 }
-
 @end
