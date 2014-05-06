@@ -11,4 +11,9 @@
 @interface UIViewController (BlockSegue)
 
 
+
+typedef void (^UIViewControllerSegueBlock) (void);
+
+-(void)setSegue:(NSString *)identifier withBlock:(UIViewControllerSegueBlock)block;
+
 @end
