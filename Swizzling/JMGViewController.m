@@ -21,4 +21,8 @@
 - (IBAction)showViewController2:(id)sender {
     [self performSegueWithIdentifier:@"segue2" sender:nil];
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"I'm going to prepare segue as usual: %@", segue.identifier);
+}
 @end

@@ -21,6 +21,7 @@
 		B9C58F0F19196F2600B20CFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C58EF119196F2600B20CFF /* UIKit.framework */; };
 		B9C58F1719196F2600B20CFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9C58F1519196F2600B20CFF /* InfoPlist.strings */; };
 		B9C58F1919196F2600B20CFF /* SwizzlingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C58F1819196F2600B20CFF /* SwizzlingTests.m */; };
+		B9C58F2419197C3900B20CFF /* UIViewController+BlockSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C58F2319197C3900B20CFF /* UIViewController+BlockSegue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		B9C58F1419196F2600B20CFF /* SwizzlingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwizzlingTests-Info.plist"; sourceTree = "<group>"; };
 		B9C58F1619196F2600B20CFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B9C58F1819196F2600B20CFF /* SwizzlingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwizzlingTests.m; sourceTree = "<group>"; };
+		B9C58F2219197C3900B20CFF /* UIViewController+BlockSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BlockSegue.h"; sourceTree = "<group>"; };
+		B9C58F2319197C3900B20CFF /* UIViewController+BlockSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BlockSegue.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				B9C58EFF19196F2600B20CFF /* Main.storyboard */,
 				B9C58F0219196F2600B20CFF /* JMGViewController.h */,
 				B9C58F0319196F2600B20CFF /* JMGViewController.m */,
+				B9C58F2219197C3900B20CFF /* UIViewController+BlockSegue.h */,
+				B9C58F2319197C3900B20CFF /* UIViewController+BlockSegue.m */,
 				B9C58F0519196F2600B20CFF /* Images.xcassets */,
 				B9C58EF419196F2600B20CFF /* Supporting Files */,
 			);
@@ -250,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9C58F2419197C3900B20CFF /* UIViewController+BlockSegue.m in Sources */,
 				B9C58EFA19196F2600B20CFF /* main.m in Sources */,
 				B9C58F0419196F2600B20CFF /* JMGViewController.m in Sources */,
 				B9C58EFE19196F2600B20CFF /* JMGAppDelegate.m in Sources */,
