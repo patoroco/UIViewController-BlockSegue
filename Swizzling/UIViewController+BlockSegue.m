@@ -56,4 +56,9 @@ void BlockSegue(void) {
     [dBlocks setObject:block forKey:identifier];
 }
 
+-(void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender withBlock:(UIViewControllerSegueBlock)block {
+    [self configureSegue:identifier withBlock:block];
+    [self performSegueWithIdentifier:identifier sender:sender];
+}
+
 @end

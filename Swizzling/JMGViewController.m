@@ -23,9 +23,8 @@
 }
 
 - (IBAction)showViewController2:(id)sender {
-    [self configureSegue:@"segue2" withBlock:^(id sender, id destinationVC) {
+    [self performSegueWithIdentifier:@"segue2" sender:nil withBlock:^(id sender, id destinationVC) {
         NSLog(@"Segue 2 con sender: %@", sender);
     }];
-    [self performSegueWithIdentifier:@"segue2" sender:nil];
 }
 @end
