@@ -7,20 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B91F6C3B191A976E00AE27FE /* JMGSampleProjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B91F6C3A191A976E00AE27FE /* JMGSampleProjectTest.m */; };
 		B9C58EEE19196F2600B20CFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C58EED19196F2600B20CFF /* Foundation.framework */; };
 		B9C58EF019196F2600B20CFF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C58EEF19196F2600B20CFF /* CoreGraphics.framework */; };
 		B9C58EF219196F2600B20CFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C58EF119196F2600B20CFF /* UIKit.framework */; };
-		B9C58EF819196F2600B20CFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9C58EF619196F2600B20CFF /* InfoPlist.strings */; };
 		B9C58EFA19196F2600B20CFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C58EF919196F2600B20CFF /* main.m */; };
 		B9C58EFE19196F2600B20CFF /* JMGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C58EFD19196F2600B20CFF /* JMGAppDelegate.m */; };
 		B9C58F0119196F2600B20CFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9C58EFF19196F2600B20CFF /* Main.storyboard */; };
-		B9C58F0419196F2600B20CFF /* JMGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C58F0319196F2600B20CFF /* JMGViewController.m */; };
+		B9C58F0419196F2600B20CFF /* JMGMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C58F0319196F2600B20CFF /* JMGMainViewController.m */; };
 		B9C58F0619196F2600B20CFF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9C58F0519196F2600B20CFF /* Images.xcassets */; };
 		B9C58F0D19196F2600B20CFF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C58F0C19196F2600B20CFF /* XCTest.framework */; };
 		B9C58F0E19196F2600B20CFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C58EED19196F2600B20CFF /* Foundation.framework */; };
 		B9C58F0F19196F2600B20CFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C58EF119196F2600B20CFF /* UIKit.framework */; };
-		B9C58F1719196F2600B20CFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9C58F1519196F2600B20CFF /* InfoPlist.strings */; };
-		B9C58F1919196F2600B20CFF /* SwizzlingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C58F1819196F2600B20CFF /* SwizzlingTests.m */; };
 		B9C58F2419197C3900B20CFF /* UIViewController+BlockSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C58F2319197C3900B20CFF /* UIViewController+BlockSegue.m */; };
 		B9C58F2A191A078900B20CFF /* JMGSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C58F29191A078900B20CFF /* JMGSecondViewController.m */; };
 		B9C58F2D191A17C200B20CFF /* JMGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C58F2C191A17C200B20CFF /* JMGUser.m */; };
@@ -37,27 +35,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B9C58EEA19196F2600B20CFF /* Swizzling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swizzling.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B91F6C3A191A976E00AE27FE /* JMGSampleProjectTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMGSampleProjectTest.m; sourceTree = "<group>"; };
+		B9C58EEA19196F2600B20CFF /* SampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9C58EED19196F2600B20CFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B9C58EEF19196F2600B20CFF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B9C58EF119196F2600B20CFF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		B9C58EF519196F2600B20CFF /* Swizzling-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Swizzling-Info.plist"; sourceTree = "<group>"; };
-		B9C58EF719196F2600B20CFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B9C58EF519196F2600B20CFF /* SampleProject-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleProject-Info.plist"; sourceTree = "<group>"; };
 		B9C58EF919196F2600B20CFF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B9C58EFB19196F2600B20CFF /* Swizzling-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swizzling-Prefix.pch"; sourceTree = "<group>"; };
-		B9C58EFC19196F2600B20CFF /* JMGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMGAppDelegate.h; sourceTree = "<group>"; };
-		B9C58EFD19196F2600B20CFF /* JMGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMGAppDelegate.m; sourceTree = "<group>"; };
+		B9C58EFB19196F2600B20CFF /* SampleProject-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleProject-Prefix.pch"; sourceTree = "<group>"; };
+		B9C58EFC19196F2600B20CFF /* JMGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JMGAppDelegate.h; path = ../SampleProject/JMGAppDelegate.h; sourceTree = "<group>"; };
+		B9C58EFD19196F2600B20CFF /* JMGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JMGAppDelegate.m; path = ../SampleProject/JMGAppDelegate.m; sourceTree = "<group>"; };
 		B9C58F0019196F2600B20CFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B9C58F0219196F2600B20CFF /* JMGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMGViewController.h; sourceTree = "<group>"; };
-		B9C58F0319196F2600B20CFF /* JMGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMGViewController.m; sourceTree = "<group>"; };
+		B9C58F0219196F2600B20CFF /* JMGMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMGMainViewController.h; sourceTree = "<group>"; };
+		B9C58F0319196F2600B20CFF /* JMGMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMGMainViewController.m; sourceTree = "<group>"; };
 		B9C58F0519196F2600B20CFF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B9C58F0B19196F2600B20CFF /* SwizzlingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwizzlingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9C58F0B19196F2600B20CFF /* SampleProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9C58F0C19196F2600B20CFF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		B9C58F1419196F2600B20CFF /* SwizzlingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwizzlingTests-Info.plist"; sourceTree = "<group>"; };
-		B9C58F1619196F2600B20CFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B9C58F1819196F2600B20CFF /* SwizzlingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwizzlingTests.m; sourceTree = "<group>"; };
-		B9C58F2219197C3900B20CFF /* UIViewController+BlockSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BlockSegue.h"; sourceTree = "<group>"; };
-		B9C58F2319197C3900B20CFF /* UIViewController+BlockSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BlockSegue.m"; sourceTree = "<group>"; };
+		B9C58F1419196F2600B20CFF /* SampleProjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleProjectTests-Info.plist"; sourceTree = "<group>"; };
+		B9C58F2219197C3900B20CFF /* UIViewController+BlockSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+BlockSegue.h"; path = "../JMGBlockSegue/UIViewController+BlockSegue.h"; sourceTree = "<group>"; };
+		B9C58F2319197C3900B20CFF /* UIViewController+BlockSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+BlockSegue.m"; path = "../JMGBlockSegue/UIViewController+BlockSegue.m"; sourceTree = "<group>"; };
 		B9C58F28191A078900B20CFF /* JMGSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMGSecondViewController.h; sourceTree = "<group>"; };
 		B9C58F29191A078900B20CFF /* JMGSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMGSecondViewController.m; sourceTree = "<group>"; };
 		B9C58F2B191A17C200B20CFF /* JMGUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMGUser.h; sourceTree = "<group>"; };
@@ -91,8 +87,9 @@
 		B9C58EE119196F2600B20CFF = {
 			isa = PBXGroup;
 			children = (
-				B9C58EF319196F2600B20CFF /* Swizzling */,
-				B9C58F1219196F2600B20CFF /* SwizzlingTests */,
+				B9C58F2E191A280300B20CFF /* JMGBlockSegue */,
+				B9C58EF319196F2600B20CFF /* SampleProject */,
+				B9C58F1219196F2600B20CFF /* SampleProjectTests */,
 				B9C58EEC19196F2600B20CFF /* Frameworks */,
 				B9C58EEB19196F2600B20CFF /* Products */,
 			);
@@ -101,8 +98,8 @@
 		B9C58EEB19196F2600B20CFF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B9C58EEA19196F2600B20CFF /* Swizzling.app */,
-				B9C58F0B19196F2600B20CFF /* SwizzlingTests.xctest */,
+				B9C58EEA19196F2600B20CFF /* SampleProject.app */,
+				B9C58F0B19196F2600B20CFF /* SampleProjectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,61 +115,94 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B9C58EF319196F2600B20CFF /* Swizzling */ = {
+		B9C58EF319196F2600B20CFF /* SampleProject */ = {
 			isa = PBXGroup;
 			children = (
 				B9C58EFC19196F2600B20CFF /* JMGAppDelegate.h */,
 				B9C58EFD19196F2600B20CFF /* JMGAppDelegate.m */,
-				B9C58EFF19196F2600B20CFF /* Main.storyboard */,
-				B9C58F2B191A17C200B20CFF /* JMGUser.h */,
-				B9C58F2C191A17C200B20CFF /* JMGUser.m */,
-				B9C58F0219196F2600B20CFF /* JMGViewController.h */,
-				B9C58F0319196F2600B20CFF /* JMGViewController.m */,
-				B9C58F28191A078900B20CFF /* JMGSecondViewController.h */,
-				B9C58F29191A078900B20CFF /* JMGSecondViewController.m */,
-				B9C58F2219197C3900B20CFF /* UIViewController+BlockSegue.h */,
-				B9C58F2319197C3900B20CFF /* UIViewController+BlockSegue.m */,
-				B9C58F0519196F2600B20CFF /* Images.xcassets */,
+				B9C58F2F191A284700B20CFF /* Model */,
+				B9C58F31191A287D00B20CFF /* View Controllers */,
+				B9C58F30191A285F00B20CFF /* Resources */,
 				B9C58EF419196F2600B20CFF /* Supporting Files */,
 			);
-			path = Swizzling;
+			path = SampleProject;
 			sourceTree = "<group>";
 		};
 		B9C58EF419196F2600B20CFF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B9C58EF519196F2600B20CFF /* Swizzling-Info.plist */,
-				B9C58EF619196F2600B20CFF /* InfoPlist.strings */,
+				B9C58EF519196F2600B20CFF /* SampleProject-Info.plist */,
 				B9C58EF919196F2600B20CFF /* main.m */,
-				B9C58EFB19196F2600B20CFF /* Swizzling-Prefix.pch */,
+				B9C58EFB19196F2600B20CFF /* SampleProject-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = ../SampleProject;
 			sourceTree = "<group>";
 		};
-		B9C58F1219196F2600B20CFF /* SwizzlingTests */ = {
+		B9C58F1219196F2600B20CFF /* SampleProjectTests */ = {
 			isa = PBXGroup;
 			children = (
-				B9C58F1819196F2600B20CFF /* SwizzlingTests.m */,
 				B9C58F1319196F2600B20CFF /* Supporting Files */,
+				B91F6C3A191A976E00AE27FE /* JMGSampleProjectTest.m */,
 			);
-			path = SwizzlingTests;
+			path = SampleProjectTests;
 			sourceTree = "<group>";
 		};
 		B9C58F1319196F2600B20CFF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B9C58F1419196F2600B20CFF /* SwizzlingTests-Info.plist */,
-				B9C58F1519196F2600B20CFF /* InfoPlist.strings */,
+				B9C58F1419196F2600B20CFF /* SampleProjectTests-Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9C58F2E191A280300B20CFF /* JMGBlockSegue */ = {
+			isa = PBXGroup;
+			children = (
+				B9C58F2219197C3900B20CFF /* UIViewController+BlockSegue.h */,
+				B9C58F2319197C3900B20CFF /* UIViewController+BlockSegue.m */,
+			);
+			path = JMGBlockSegue;
+			sourceTree = "<group>";
+		};
+		B9C58F2F191A284700B20CFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B9C58F2B191A17C200B20CFF /* JMGUser.h */,
+				B9C58F2C191A17C200B20CFF /* JMGUser.m */,
+			);
+			name = Model;
+			path = ../SampleProject/Model;
+			sourceTree = "<group>";
+		};
+		B9C58F30191A285F00B20CFF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B9C58EFF19196F2600B20CFF /* Main.storyboard */,
+				B9C58F0519196F2600B20CFF /* Images.xcassets */,
+			);
+			name = Resources;
+			path = ../SampleProject;
+			sourceTree = "<group>";
+		};
+		B9C58F31191A287D00B20CFF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B9C58F0219196F2600B20CFF /* JMGMainViewController.h */,
+				B9C58F0319196F2600B20CFF /* JMGMainViewController.m */,
+				B9C58F28191A078900B20CFF /* JMGSecondViewController.h */,
+				B9C58F29191A078900B20CFF /* JMGSecondViewController.m */,
+			);
+			name = "View Controllers";
+			path = ../SampleProject/ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B9C58EE919196F2600B20CFF /* Swizzling */ = {
+		B9C58EE919196F2600B20CFF /* SampleProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B9C58F1C19196F2600B20CFF /* Build configuration list for PBXNativeTarget "Swizzling" */;
+			buildConfigurationList = B9C58F1C19196F2600B20CFF /* Build configuration list for PBXNativeTarget "SampleProject" */;
 			buildPhases = (
 				B9C58EE619196F2600B20CFF /* Sources */,
 				B9C58EE719196F2600B20CFF /* Frameworks */,
@@ -182,14 +212,14 @@
 			);
 			dependencies = (
 			);
-			name = Swizzling;
+			name = SampleProject;
 			productName = Swizzling;
-			productReference = B9C58EEA19196F2600B20CFF /* Swizzling.app */;
+			productReference = B9C58EEA19196F2600B20CFF /* SampleProject.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B9C58F0A19196F2600B20CFF /* SwizzlingTests */ = {
+		B9C58F0A19196F2600B20CFF /* SampleProjectTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B9C58F1F19196F2600B20CFF /* Build configuration list for PBXNativeTarget "SwizzlingTests" */;
+			buildConfigurationList = B9C58F1F19196F2600B20CFF /* Build configuration list for PBXNativeTarget "SampleProjectTests" */;
 			buildPhases = (
 				B9C58F0719196F2600B20CFF /* Sources */,
 				B9C58F0819196F2600B20CFF /* Frameworks */,
@@ -200,9 +230,9 @@
 			dependencies = (
 				B9C58F1119196F2600B20CFF /* PBXTargetDependency */,
 			);
-			name = SwizzlingTests;
+			name = SampleProjectTests;
 			productName = SwizzlingTests;
-			productReference = B9C58F0B19196F2600B20CFF /* SwizzlingTests.xctest */;
+			productReference = B9C58F0B19196F2600B20CFF /* SampleProjectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -220,7 +250,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B9C58EE519196F2600B20CFF /* Build configuration list for PBXProject "Swizzling" */;
+			buildConfigurationList = B9C58EE519196F2600B20CFF /* Build configuration list for PBXProject "SampleProject" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -233,8 +263,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B9C58EE919196F2600B20CFF /* Swizzling */,
-				B9C58F0A19196F2600B20CFF /* SwizzlingTests */,
+				B9C58EE919196F2600B20CFF /* SampleProject */,
+				B9C58F0A19196F2600B20CFF /* SampleProjectTests */,
 			);
 		};
 /* End PBXProject section */
@@ -245,7 +275,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9C58F0619196F2600B20CFF /* Images.xcassets in Resources */,
-				B9C58EF819196F2600B20CFF /* InfoPlist.strings in Resources */,
 				B9C58F0119196F2600B20CFF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,7 +283,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9C58F1719196F2600B20CFF /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +296,7 @@
 				B9C58F2419197C3900B20CFF /* UIViewController+BlockSegue.m in Sources */,
 				B9C58EFA19196F2600B20CFF /* main.m in Sources */,
 				B9C58F2D191A17C200B20CFF /* JMGUser.m in Sources */,
-				B9C58F0419196F2600B20CFF /* JMGViewController.m in Sources */,
+				B9C58F0419196F2600B20CFF /* JMGMainViewController.m in Sources */,
 				B9C58F2A191A078900B20CFF /* JMGSecondViewController.m in Sources */,
 				B9C58EFE19196F2600B20CFF /* JMGAppDelegate.m in Sources */,
 			);
@@ -278,7 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9C58F1919196F2600B20CFF /* SwizzlingTests.m in Sources */,
+				B91F6C3B191A976E00AE27FE /* JMGSampleProjectTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,34 +315,18 @@
 /* Begin PBXTargetDependency section */
 		B9C58F1119196F2600B20CFF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B9C58EE919196F2600B20CFF /* Swizzling */;
+			target = B9C58EE919196F2600B20CFF /* SampleProject */;
 			targetProxy = B9C58F1019196F2600B20CFF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B9C58EF619196F2600B20CFF /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B9C58EF719196F2600B20CFF /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		B9C58EFF19196F2600B20CFF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B9C58F0019196F2600B20CFF /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B9C58F1519196F2600B20CFF /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B9C58F1619196F2600B20CFF /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -396,9 +408,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Swizzling/Swizzling-Prefix.pch";
-				INFOPLIST_FILE = "Swizzling/Swizzling-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "SampleProject/SampleProject-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/SampleProject/SampleProject-Info.plist";
+				PRODUCT_NAME = SampleProject;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -409,9 +421,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Swizzling/Swizzling-Prefix.pch";
-				INFOPLIST_FILE = "Swizzling/Swizzling-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "SampleProject/SampleProject-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/SampleProject/SampleProject-Info.plist";
+				PRODUCT_NAME = SampleProject;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -419,20 +431,20 @@
 		B9C58F2019196F2600B20CFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Swizzling.app/Swizzling";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SampleProject.app/SampleProject";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Swizzling/Swizzling-Prefix.pch";
+				GCC_PREFIX_HEADER = "SampleProject/SampleProject-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "SwizzlingTests/SwizzlingTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "SwizzlingTests/SampleProjectTests-Info.plist";
+				PRODUCT_NAME = SampleProjectTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -441,16 +453,16 @@
 		B9C58F2119196F2600B20CFF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Swizzling.app/Swizzling";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SampleProject.app/SampleProject";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Swizzling/Swizzling-Prefix.pch";
-				INFOPLIST_FILE = "SwizzlingTests/SwizzlingTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "SampleProject/SampleProject-Prefix.pch";
+				INFOPLIST_FILE = "SwizzlingTests/SampleProjectTests-Info.plist";
+				PRODUCT_NAME = SampleProjectTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -459,7 +471,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B9C58EE519196F2600B20CFF /* Build configuration list for PBXProject "Swizzling" */ = {
+		B9C58EE519196F2600B20CFF /* Build configuration list for PBXProject "SampleProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B9C58F1A19196F2600B20CFF /* Debug */,
@@ -468,21 +480,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B9C58F1C19196F2600B20CFF /* Build configuration list for PBXNativeTarget "Swizzling" */ = {
+		B9C58F1C19196F2600B20CFF /* Build configuration list for PBXNativeTarget "SampleProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B9C58F1D19196F2600B20CFF /* Debug */,
 				B9C58F1E19196F2600B20CFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		B9C58F1F19196F2600B20CFF /* Build configuration list for PBXNativeTarget "SwizzlingTests" */ = {
+		B9C58F1F19196F2600B20CFF /* Build configuration list for PBXNativeTarget "SampleProjectTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B9C58F2019196F2600B20CFF /* Debug */,
 				B9C58F2119196F2600B20CFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,18 +1,18 @@
 //
-//  SwizzlingTests.m
-//  SwizzlingTests
+//  JMGSampleProjectTest.m
+//  SampleProject
 //
-//  Created by Jorge Maroto García on 06/05/14.
+//  Created by Jorge Maroto García on 07/05/14.
 //  Copyright (c) 2014 Jorge Maroto. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface SwizzlingTests : XCTestCase
+@interface JMGSampleProjectTest : XCTestCase
 
 @end
 
-@implementation SwizzlingTests
+@implementation JMGSampleProjectTest
 
 - (void)setUp
 {

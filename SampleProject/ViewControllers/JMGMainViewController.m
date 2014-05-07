@@ -1,18 +1,18 @@
 //
-//  JMGViewController.m
-//  Swizzling
+//  JMGMainViewController.m
+//  SampleProject
 //
 //  Created by Jorge Maroto García on 06/05/14.
 //  Copyright (c) 2014 Jorge Maroto. All rights reserved.
 //
 
-#import "JMGViewController.h"
+#import "JMGMainViewController.h"
 #import "UIViewController+BlockSegue.h"
 
 #import "JMGUser.h"
 #import "JMGSecondViewController.h"
 
-@implementation JMGViewController
+@implementation JMGMainViewController
 
 -(void)viewDidLoad {
     [super viewDidLoad];
