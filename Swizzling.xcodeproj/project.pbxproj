@@ -22,6 +22,8 @@
 		B9C58F1719196F2600B20CFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9C58F1519196F2600B20CFF /* InfoPlist.strings */; };
 		B9C58F1919196F2600B20CFF /* SwizzlingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C58F1819196F2600B20CFF /* SwizzlingTests.m */; };
 		B9C58F2419197C3900B20CFF /* UIViewController+BlockSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C58F2319197C3900B20CFF /* UIViewController+BlockSegue.m */; };
+		B9C58F2A191A078900B20CFF /* JMGSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C58F29191A078900B20CFF /* JMGSecondViewController.m */; };
+		B9C58F2D191A17C200B20CFF /* JMGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C58F2C191A17C200B20CFF /* JMGUser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,10 @@
 		B9C58F1819196F2600B20CFF /* SwizzlingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwizzlingTests.m; sourceTree = "<group>"; };
 		B9C58F2219197C3900B20CFF /* UIViewController+BlockSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BlockSegue.h"; sourceTree = "<group>"; };
 		B9C58F2319197C3900B20CFF /* UIViewController+BlockSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BlockSegue.m"; sourceTree = "<group>"; };
+		B9C58F28191A078900B20CFF /* JMGSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMGSecondViewController.h; sourceTree = "<group>"; };
+		B9C58F29191A078900B20CFF /* JMGSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMGSecondViewController.m; sourceTree = "<group>"; };
+		B9C58F2B191A17C200B20CFF /* JMGUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMGUser.h; sourceTree = "<group>"; };
+		B9C58F2C191A17C200B20CFF /* JMGUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMGUser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +124,12 @@
 				B9C58EFC19196F2600B20CFF /* JMGAppDelegate.h */,
 				B9C58EFD19196F2600B20CFF /* JMGAppDelegate.m */,
 				B9C58EFF19196F2600B20CFF /* Main.storyboard */,
+				B9C58F2B191A17C200B20CFF /* JMGUser.h */,
+				B9C58F2C191A17C200B20CFF /* JMGUser.m */,
 				B9C58F0219196F2600B20CFF /* JMGViewController.h */,
 				B9C58F0319196F2600B20CFF /* JMGViewController.m */,
+				B9C58F28191A078900B20CFF /* JMGSecondViewController.h */,
+				B9C58F29191A078900B20CFF /* JMGSecondViewController.m */,
 				B9C58F2219197C3900B20CFF /* UIViewController+BlockSegue.h */,
 				B9C58F2319197C3900B20CFF /* UIViewController+BlockSegue.m */,
 				B9C58F0519196F2600B20CFF /* Images.xcassets */,
@@ -257,7 +267,9 @@
 			files = (
 				B9C58F2419197C3900B20CFF /* UIViewController+BlockSegue.m in Sources */,
 				B9C58EFA19196F2600B20CFF /* main.m in Sources */,
+				B9C58F2D191A17C200B20CFF /* JMGUser.m in Sources */,
 				B9C58F0419196F2600B20CFF /* JMGViewController.m in Sources */,
+				B9C58F2A191A078900B20CFF /* JMGSecondViewController.m in Sources */,
 				B9C58EFE19196F2600B20CFF /* JMGAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

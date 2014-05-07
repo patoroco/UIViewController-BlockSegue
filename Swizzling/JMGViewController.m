@@ -9,22 +9,33 @@
 #import "JMGViewController.h"
 #import "UIViewController+BlockSegue.h"
 
-@interface JMGViewController ()
-
-@end
+#import "JMGUser.h"
+#import "JMGSecondViewController.h"
 
 @implementation JMGViewController
 
-- (IBAction)showViewController1:(id)sender {
+-(void)viewDidLoad {
+    [super viewDidLoad];
+    
     [self configureSegue:@"segue1" withBlock:^(id sender, id destinationVC) {
-        NSLog(@"Estoy dentro y el sender es: %@", sender);
+        NSLog(@"Segue configured fired from storyboard");
     }];
-    [self performSegueWithIdentifier:@"segue1" sender:nil];
 }
 
-- (IBAction)showViewController2:(id)sender {
-    [self performSegueWithIdentifier:@"segue2" sender:nil withBlock:^(id sender, id destinationVC) {
-        NSLog(@"Segue 2 con sender: %@", sender);
-    }];
+
+#pragma mark - UI Buttons
+
+- (IBAction)showViewController:(id)sender {
+    JMGUser *tmpUser = [[JMGUser alloc] init];
+    tmpUser.name = @"Richard";
+    tmpUser.surname = @"Gere";
+
+    [self performSegueWithIdentifier:@"segue2"
+                              sender:nil
+                           withBlock:^(id sender, JMGSecondViewController *destinationVC) {
+                               NSLog(@"Segue configured inline");
+                               destinationVC.user = tmpUser;
+                           }];
 }
+
 @end

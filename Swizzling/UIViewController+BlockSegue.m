@@ -29,7 +29,7 @@ void BlockSegue(void) {
 
 -(void)jmg_prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if (!self.jmg_dictionaryBlock || !self.jmg_dictionaryBlock[segue.identifier]) {
-        NSLog(@"Identifier '%@' doesn't exist", segue.identifier);
+        NSLog(@"Segue identifier '%@' doesn't exist", segue.identifier);
         return;
     }
     

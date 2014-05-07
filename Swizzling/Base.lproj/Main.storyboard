@@ -16,24 +16,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiM-ef-qt5">
-                                <rect key="frame" x="104" y="221" width="113" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sJ-xE-3DL">
+                                <rect key="frame" x="77" y="297" width="161" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="ViewController 1">
+                                <state key="normal" title="Segue configured inline">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="showViewController1:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TrS-YQ-ych"/>
+                                    <action selector="showViewController:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Gjt-Ib-0bq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sJ-xE-3DL">
-                                <rect key="frame" x="104" y="317" width="113" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAN-oa-kET">
+                                <rect key="frame" x="86" y="241" width="149" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="ViewController 2">
+                                <state key="normal" title="Fired from storyboard">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="showViewController2:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Z2b-Rr-4z8"/>
+                                    <segue destination="e0c-8f-kNr" kind="push" identifier="segue1" id="kHE-QR-E9D"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -41,7 +41,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="TQN-XS-nU4"/>
                     <connections>
-                        <segue destination="eb1-lX-SKZ" kind="push" identifier="segue1" id="thx-mW-MBd"/>
                         <segue destination="58d-HU-Wzo" kind="push" identifier="segue2" id="Abb-5e-kZh"/>
                     </connections>
                 </viewController>
@@ -49,38 +48,10 @@
             </objects>
             <point key="canvasLocation" x="671" y="29"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="dk4-ee-jvq">
-            <objects>
-                <viewController id="eb1-lX-SKZ" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="eae-cI-19k"/>
-                        <viewControllerLayoutGuide type="bottom" id="qKu-m6-yMJ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="gfp-5s-FOd">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yo soy el 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAK-Be-v10">
-                                <rect key="frame" x="119" y="273" width="83" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="myp-Yw-mYb"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f1L-bn-GFQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1217" y="-316"/>
-        </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="18t-JO-Lqe">
             <objects>
-                <viewController id="58d-HU-Wzo" sceneMemberID="viewController">
+                <viewController id="58d-HU-Wzo" customClass="JMGSecondViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Asn-23-Jjd"/>
                         <viewControllerLayoutGuide type="bottom" id="6UW-pB-3Pv"/>
@@ -89,17 +60,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yo soy el 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESW-GX-YTc">
-                                <rect key="frame" x="119" y="273" width="83" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ViewController2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESW-GX-YTc">
+                                <rect key="frame" x="100" y="252" width="121" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="- content -" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pN4-rY-OIi">
+                                <rect key="frame" x="55" y="281" width="211" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="HiJ-YE-2z0"/>
+                    <connections>
+                        <outlet property="changeableLabel" destination="pN4-rY-OIi" id="uVy-4G-tMp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k3m-2N-lUM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,6 +102,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ezu-1f-An6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="232" y="23"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qvX-dS-2l5">
+            <objects>
+                <viewController id="e0c-8f-kNr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aub-Je-s7K"/>
+                        <viewControllerLayoutGuide type="bottom" id="hhI-qK-4C5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0jw-VH-0Yn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ViewController 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MwN-e2-pMw">
+                                <rect key="frame" x="97" y="273" width="126" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="foa-JH-DUG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hkl-bQ-Mab" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1217" y="-326"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
