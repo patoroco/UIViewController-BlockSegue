@@ -15,22 +15,17 @@
 
 @implementation JMGViewController
 
--(void)viewDidLoad {
-    [super viewDidLoad];
-    [self setSegue:@"titulo" withBlock:^{
-        NSLog(@"Este es el bloque dentro");
-    }];
-}
-
 - (IBAction)showViewController1:(id)sender {
+    [self configureSegue:@"segue1" withBlock:^(id sender, id destinationVC) {
+        NSLog(@"Estoy dentro y el sender es: %@", sender);
+    }];
     [self performSegueWithIdentifier:@"segue1" sender:nil];
 }
 
 - (IBAction)showViewController2:(id)sender {
+    [self configureSegue:@"segue2" withBlock:^(id sender, id destinationVC) {
+        NSLog(@"Segue 2 con sender: %@", sender);
+    }];
     [self performSegueWithIdentifier:@"segue2" sender:nil];
 }
-
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    NSLog(@"I'm going to prepare segue as usual: %@", segue.identifier);
-//}
 @end

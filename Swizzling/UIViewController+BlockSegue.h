@@ -8,12 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void (^UIViewControllerSegueBlock) (id sender, id destinationVC);
+
 @interface UIViewController (BlockSegue)
 
-
-
-typedef void (^UIViewControllerSegueBlock) (void);
-
--(void)setSegue:(NSString *)identifier withBlock:(UIViewControllerSegueBlock)block;
+-(void)configureSegue:(NSString *)identifier withBlock:(UIViewControllerSegueBlock)block;
 
 @end
