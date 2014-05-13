@@ -71,14 +71,14 @@ void BlockSegue(void) {
 
 #pragma mark - Public interface
 -(void)configureSegue:(NSString *)identifier withBlock:(UIViewControllerSegueBlock)block {
-    NSMutableDictionary *dBlocks = self.jmg_dictionaryBlock ?: [self jmg_createDictionaryBlock];
-    [dBlocks setObject:block forKey:identifier];
+    if (block) {
+        NSMutableDictionary *dBlocks = self.jmg_dictionaryBlock ?: [self jmg_createDictionaryBlock];
+        [dBlocks setObject:block forKey:identifier];
+    }
 }
 
 -(void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender withBlock:(UIViewControllerSegueBlock)block {
-    if (block) {
-        [self configureSegue:identifier withBlock:block];
-    }
+    [self configureSegue:identifier withBlock:block];
     [self performSegueWithIdentifier:identifier sender:sender];
 }
 
