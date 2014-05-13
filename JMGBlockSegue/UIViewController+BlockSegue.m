@@ -76,7 +76,9 @@ void BlockSegue(void) {
 }
 
 -(void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender withBlock:(UIViewControllerSegueBlock)block {
-    [self configureSegue:identifier withBlock:block];
+    if (block) {
+        [self configureSegue:identifier withBlock:block];
+    }
     [self performSegueWithIdentifier:identifier sender:sender];
 }
 
