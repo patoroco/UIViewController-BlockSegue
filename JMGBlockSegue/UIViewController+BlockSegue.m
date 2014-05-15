@@ -68,16 +68,29 @@ void BlockSegue(void) {
     return self.jmg_dictionaryBlock;
 }
 
-
 #pragma mark - Public interface
 -(void)configureSegue:(NSString *)identifier withBlock:(UIViewControllerSegueBlock)block {
-    if (block) {
-        NSMutableDictionary *dBlocks = self.jmg_dictionaryBlock ?: [self jmg_createDictionaryBlock];
-        [dBlocks setObject:block forKey:identifier];
+    if (!identifier) {
+        @throw [NSException exceptionWithName:NSInvalidArgumentException reason:@"Segue identifier can not be nil" userInfo:nil];
     }
+
+    if (!block) {
+        return ;
+    }
+    
+    NSMutableDictionary *dBlocks = self.jmg_dictionaryBlock ?: [self jmg_createDictionaryBlock];
+    [dBlocks setObject:block forKey:identifier];
 }
 
 -(void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender withBlock:(UIViewControllerSegueBlock)block {
+    if (!identifier) {
+        @throw [NSException exceptionWithName:NSInvalidArgumentException reason:@"Segue identifier can not be nil" userInfo:nil];
+    }
+
+    if (!block) {
+        return ;
+    }
+    
     [self configureSegue:identifier withBlock:block];
     [self performSegueWithIdentifier:identifier sender:sender];
 }

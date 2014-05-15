@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B91F6C3B191A976E00AE27FE /* JMGSampleProjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B91F6C3A191A976E00AE27FE /* JMGSampleProjectTest.m */; };
+		7B791592CDE54D3EA7E075F5 /* libPods-SampleProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F69ADCD92C545AABB333748 /* libPods-SampleProjectTests.a */; };
+		B951ABCA1923FD8C009D8479 /* UIViewController+BlockSegueTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B951ABC91923FD8C009D8479 /* UIViewController+BlockSegueTest.m */; };
+		B951ABCB19249614009D8479 /* UIViewController+BlockSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C58F2319197C3900B20CFF /* UIViewController+BlockSegue.m */; };
 		B9C58EEE19196F2600B20CFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C58EED19196F2600B20CFF /* Foundation.framework */; };
 		B9C58EF019196F2600B20CFF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C58EEF19196F2600B20CFF /* CoreGraphics.framework */; };
 		B9C58EF219196F2600B20CFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C58EF119196F2600B20CFF /* UIKit.framework */; };
@@ -35,7 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B91F6C3A191A976E00AE27FE /* JMGSampleProjectTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMGSampleProjectTest.m; sourceTree = "<group>"; };
+		0F69ADCD92C545AABB333748 /* libPods-SampleProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SampleProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A70BCB7B2454BEEAE3F97CA /* Pods-SampleProjectTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleProjectTests.xcconfig"; path = "Pods/Pods-SampleProjectTests.xcconfig"; sourceTree = "<group>"; };
+		B951ABC91923FD8C009D8479 /* UIViewController+BlockSegueTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BlockSegueTest.m"; sourceTree = "<group>"; };
 		B9C58EEA19196F2600B20CFF /* SampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9C58EED19196F2600B20CFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B9C58EEF19196F2600B20CFF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -78,6 +82,7 @@
 				B9C58F0D19196F2600B20CFF /* XCTest.framework in Frameworks */,
 				B9C58F0F19196F2600B20CFF /* UIKit.framework in Frameworks */,
 				B9C58F0E19196F2600B20CFF /* Foundation.framework in Frameworks */,
+				7B791592CDE54D3EA7E075F5 /* libPods-SampleProjectTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +97,7 @@
 				B9C58F1219196F2600B20CFF /* SampleProjectTests */,
 				B9C58EEC19196F2600B20CFF /* Frameworks */,
 				B9C58EEB19196F2600B20CFF /* Products */,
+				8A70BCB7B2454BEEAE3F97CA /* Pods-SampleProjectTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +117,7 @@
 				B9C58EEF19196F2600B20CFF /* CoreGraphics.framework */,
 				B9C58EF119196F2600B20CFF /* UIKit.framework */,
 				B9C58F0C19196F2600B20CFF /* XCTest.framework */,
+				0F69ADCD92C545AABB333748 /* libPods-SampleProjectTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,7 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				B9C58F1319196F2600B20CFF /* Supporting Files */,
-				B91F6C3A191A976E00AE27FE /* JMGSampleProjectTest.m */,
+				B951ABC91923FD8C009D8479 /* UIViewController+BlockSegueTest.m */,
 			);
 			path = SampleProjectTests;
 			sourceTree = "<group>";
@@ -221,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9C58F1F19196F2600B20CFF /* Build configuration list for PBXNativeTarget "SampleProjectTests" */;
 			buildPhases = (
+				96E931093D7F49D8A6F141C7 /* Check Pods Manifest.lock */,
 				B9C58F0719196F2600B20CFF /* Sources */,
 				B9C58F0819196F2600B20CFF /* Frameworks */,
 				B9C58F0919196F2600B20CFF /* Resources */,
+				3495A0F68CA3459B8FB19250 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -288,6 +297,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3495A0F68CA3459B8FB19250 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-SampleProjectTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96E931093D7F49D8A6F141C7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B9C58EE619196F2600B20CFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -306,7 +348,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B91F6C3B191A976E00AE27FE /* JMGSampleProjectTest.m in Sources */,
+				B951ABCB19249614009D8479 /* UIViewController+BlockSegue.m in Sources */,
+				B951ABCA1923FD8C009D8479 /* UIViewController+BlockSegueTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +473,9 @@
 		};
 		B9C58F2019196F2600B20CFF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A70BCB7B2454BEEAE3F97CA /* Pods-SampleProjectTests.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SampleProject.app/SampleProject";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -443,16 +488,24 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "SwizzlingTests/SampleProjectTests-Info.plist";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/JMGBlockSegue",
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/OCMock\"",
+				);
+				INFOPLIST_FILE = "./SampleProjectTests/SampleProjectTests-Info.plist";
 				PRODUCT_NAME = SampleProjectTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/JMGBlockSegue";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
 		B9C58F2119196F2600B20CFF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A70BCB7B2454BEEAE3F97CA /* Pods-SampleProjectTests.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SampleProject.app/SampleProject";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -461,9 +514,15 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleProject/SampleProject-Prefix.pch";
-				INFOPLIST_FILE = "SwizzlingTests/SampleProjectTests-Info.plist";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/JMGBlockSegue",
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/OCMock\"",
+				);
+				INFOPLIST_FILE = "./SampleProjectTests/SampleProjectTests-Info.plist";
 				PRODUCT_NAME = SampleProjectTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/JMGBlockSegue";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
