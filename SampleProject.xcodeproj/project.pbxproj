@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7B791592CDE54D3EA7E075F5 /* libPods-SampleProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F69ADCD92C545AABB333748 /* libPods-SampleProjectTests.a */; };
+		B946A5C119253C5E00BA1356 /* UIViewController+BlockSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B946A5C019253C5E00BA1356 /* UIViewController+BlockSegue.m */; };
 		B951ABCA1923FD8C009D8479 /* UIViewController+BlockSegueTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B951ABC91923FD8C009D8479 /* UIViewController+BlockSegueTest.m */; };
-		B951ABCB19249614009D8479 /* UIViewController+BlockSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C58F2319197C3900B20CFF /* UIViewController+BlockSegue.m */; };
 		B9C58EEE19196F2600B20CFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C58EED19196F2600B20CFF /* Foundation.framework */; };
 		B9C58EF019196F2600B20CFF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C58EEF19196F2600B20CFF /* CoreGraphics.framework */; };
 		B9C58EF219196F2600B20CFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C58EF119196F2600B20CFF /* UIKit.framework */; };
@@ -21,7 +21,6 @@
 		B9C58F0D19196F2600B20CFF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C58F0C19196F2600B20CFF /* XCTest.framework */; };
 		B9C58F0E19196F2600B20CFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C58EED19196F2600B20CFF /* Foundation.framework */; };
 		B9C58F0F19196F2600B20CFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C58EF119196F2600B20CFF /* UIKit.framework */; };
-		B9C58F2419197C3900B20CFF /* UIViewController+BlockSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C58F2319197C3900B20CFF /* UIViewController+BlockSegue.m */; };
 		B9C58F2A191A078900B20CFF /* JMGSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C58F29191A078900B20CFF /* JMGSecondViewController.m */; };
 		B9C58F2D191A17C200B20CFF /* JMGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C58F2C191A17C200B20CFF /* JMGUser.m */; };
 /* End PBXBuildFile section */
@@ -39,6 +38,8 @@
 /* Begin PBXFileReference section */
 		0F69ADCD92C545AABB333748 /* libPods-SampleProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SampleProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A70BCB7B2454BEEAE3F97CA /* Pods-SampleProjectTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleProjectTests.xcconfig"; path = "Pods/Pods-SampleProjectTests.xcconfig"; sourceTree = "<group>"; };
+		B946A5BF19253C5E00BA1356 /* UIViewController+BlockSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BlockSegue.h"; sourceTree = "<group>"; };
+		B946A5C019253C5E00BA1356 /* UIViewController+BlockSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BlockSegue.m"; sourceTree = "<group>"; };
 		B951ABC91923FD8C009D8479 /* UIViewController+BlockSegueTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BlockSegueTest.m"; sourceTree = "<group>"; };
 		B9C58EEA19196F2600B20CFF /* SampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9C58EED19196F2600B20CFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -56,8 +57,6 @@
 		B9C58F0B19196F2600B20CFF /* SampleProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9C58F0C19196F2600B20CFF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B9C58F1419196F2600B20CFF /* SampleProjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleProjectTests-Info.plist"; sourceTree = "<group>"; };
-		B9C58F2219197C3900B20CFF /* UIViewController+BlockSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+BlockSegue.h"; path = "../JMGBlockSegue/UIViewController+BlockSegue.h"; sourceTree = "<group>"; };
-		B9C58F2319197C3900B20CFF /* UIViewController+BlockSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+BlockSegue.m"; path = "../JMGBlockSegue/UIViewController+BlockSegue.m"; sourceTree = "<group>"; };
 		B9C58F28191A078900B20CFF /* JMGSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMGSecondViewController.h; sourceTree = "<group>"; };
 		B9C58F29191A078900B20CFF /* JMGSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMGSecondViewController.m; sourceTree = "<group>"; };
 		B9C58F2B191A17C200B20CFF /* JMGUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMGUser.h; sourceTree = "<group>"; };
@@ -89,10 +88,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B946A5BE19253C5E00BA1356 /* UIViewController+BlockSegue */ = {
+			isa = PBXGroup;
+			children = (
+				B946A5BF19253C5E00BA1356 /* UIViewController+BlockSegue.h */,
+				B946A5C019253C5E00BA1356 /* UIViewController+BlockSegue.m */,
+			);
+			path = "UIViewController+BlockSegue";
+			sourceTree = "<group>";
+		};
 		B9C58EE119196F2600B20CFF = {
 			isa = PBXGroup;
 			children = (
-				B9C58F2E191A280300B20CFF /* JMGBlockSegue */,
+				B946A5BE19253C5E00BA1356 /* UIViewController+BlockSegue */,
 				B9C58EF319196F2600B20CFF /* SampleProject */,
 				B9C58F1219196F2600B20CFF /* SampleProjectTests */,
 				B9C58EEC19196F2600B20CFF /* Frameworks */,
@@ -161,15 +169,6 @@
 				B9C58F1419196F2600B20CFF /* SampleProjectTests-Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B9C58F2E191A280300B20CFF /* JMGBlockSegue */ = {
-			isa = PBXGroup;
-			children = (
-				B9C58F2219197C3900B20CFF /* UIViewController+BlockSegue.h */,
-				B9C58F2319197C3900B20CFF /* UIViewController+BlockSegue.m */,
-			);
-			path = JMGBlockSegue;
 			sourceTree = "<group>";
 		};
 		B9C58F2F191A284700B20CFF /* Model */ = {
@@ -335,7 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9C58F2419197C3900B20CFF /* UIViewController+BlockSegue.m in Sources */,
+				B946A5C119253C5E00BA1356 /* UIViewController+BlockSegue.m in Sources */,
 				B9C58EFA19196F2600B20CFF /* main.m in Sources */,
 				B9C58F2D191A17C200B20CFF /* JMGUser.m in Sources */,
 				B9C58F0419196F2600B20CFF /* JMGMainViewController.m in Sources */,
@@ -348,7 +347,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B951ABCB19249614009D8479 /* UIViewController+BlockSegue.m in Sources */,
 				B951ABCA1923FD8C009D8479 /* UIViewController+BlockSegueTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,14 +487,14 @@
 					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/JMGBlockSegue",
+					"$(SRCROOT)/UIViewController+BlockSegue",
 					"\"${PODS_ROOT}/Headers\"",
 					"\"${PODS_ROOT}/Headers/OCMock\"",
 				);
 				INFOPLIST_FILE = "./SampleProjectTests/SampleProjectTests-Info.plist";
 				PRODUCT_NAME = SampleProjectTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/JMGBlockSegue";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/UIViewController+BlockSegue";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -515,14 +513,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleProject/SampleProject-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/JMGBlockSegue",
+					"$(SRCROOT)/UIViewController+BlockSegue",
 					"\"${PODS_ROOT}/Headers\"",
 					"\"${PODS_ROOT}/Headers/OCMock\"",
 				);
 				INFOPLIST_FILE = "./SampleProjectTests/SampleProjectTests-Info.plist";
 				PRODUCT_NAME = SampleProjectTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/JMGBlockSegue";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/UIViewController+BlockSegue";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
