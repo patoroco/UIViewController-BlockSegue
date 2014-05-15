@@ -1,3 +1,8 @@
+![Cocoa Pods Version](https://cocoapod-badges.herokuapp.com/v/JMGBlockSegue/badge.png)
+![Cocoa Pods Platform](https://cocoapod-badges.herokuapp.com/p/JMGBlockSegue/badge.png)
+[![Build Status](https://travis-ci.org/patoroco/JMGBlockSegue.svg?branch=master)](https://travis-ci.org/patoroco/JMGBlockSegue)
+
+
 Are you tired to write an ugly and big `-prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender:` method like that?
 
 ```objective-c
@@ -47,7 +52,7 @@ Perform segue and configure the block which is executed in the same sentence.
 ```
 
 
-### independently
+### Independently
 
 Configure segue block independently of his execution, this way could be called on viewDidLoad for example, and it's run with both the call performSegueWithIdentifier:sender: method and storyboard segue perform.
 
@@ -59,13 +64,18 @@ Configure segue block independently of his execution, this way could be called o
 }];
 ```
 
-## TODO
+## Testing
 
-- Testing it. I know that this a very small lib, but I want to do it as an exercise with runtime & tests :)
-- Issues and pull requests are welcome!
+I added some tests as personal exercise, but if you want run them, exec script (it uses [xcpretty by supermarin](https://github.com/supermarin/xcpretty)):
+
+```
+./run_tests.sh
+```
+
 
 
 ## Acknowledges
+- You can see a [list of contributors to this repo](https://github.com/patoroco/UIViewController-BlockSegue/graphs/contributors). Thanks to everybody!
 - Special thanks to [@luisobo](https://github.com/luisobo) for support me with `runtime.h`, thanks buddy!.
 - I found very useful the [NSHipster about method swizzling](http://nshipster.com/method-swizzling/).
 - It was inspired by [UIAlertView-Blocks](https://github.com/ryanmaxwell/UIAlertView-Blocks), which helps you to write good-looking code with sad UIAlertView interface / delegates.
