@@ -1,7 +1,6 @@
-![Cocoa Pods Version](https://cocoapod-badges.herokuapp.com/v/JMGBlockSegue/badge.png)
-![Cocoa Pods Platform](https://cocoapod-badges.herokuapp.com/p/JMGBlockSegue/badge.png)
-[![Build Status](https://travis-ci.org/patoroco/JMGBlockSegue.svg?branch=master)](https://travis-ci.org/patoroco/JMGBlockSegue)
-
+![Cocoa Pods Version](https://cocoapod-badges.herokuapp.com/v/UIViewController+BlockSegue/badge.png)
+![Cocoa Pods Platform](https://cocoapod-badges.herokuapp.com/p/UIViewController+BlockSegue/badge.png)
+[![Build Status](https://travis-ci.org/patoroco/UIViewController-BlockSegue.svg)](https://travis-ci.org/patoroco/UIViewController-BlockSegue)
 
 Are you tired to write an ugly and big `-prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender:` method like that?
 
@@ -22,21 +21,21 @@ Are you tired to write an ugly and big `-prepareForSegue:(UIStoryboardSegue *)se
 }
 ```
 
-Check JMGBlockSegue and enjoy **defining a block** which will be executed to prepare segue **in the same place which you call to `performSegue`**.
+Check UIViewController+BlockSegue and enjoy **defining a block** which will be executed to prepare segue **in the same place which you call to `performSegue`**.
 
 
 ## Install
 
-Use JMGBlockSegue it's really easy, you only need to drop `JMGBlockSegue folder` to your project, or if you are a CocoaPods-lover, you can include this line in your Podfile as usual:
+Use UIViewController+BlockSegue category it's really easy, you only need to drop `UIViewController+BlockSegue folder` to your project, or if you are a CocoaPods-lover, you can include this line in your Podfile as usual:
 
 ```
-pod 'JMGBlockSegue'
+pod 'UIViewController+BlockSegue'
 ```
 After that, you need to import `UIViewController+BlockSegue.h` on each view controller where you want to configure segues.
 
 ## Use
 
-JMGBlockSegue can be used in two ways: inline (when you performSegue programatically) or independently (in other line).
+UIViewController+BlockSegue can be used in two ways: inline (when you performSegue programatically) or independently (in other line).
 
 
 ### Inline
@@ -85,4 +84,4 @@ I added some tests as personal exercise, but if you want run them, exec script (
 - Jorge Maroto ([@patoroco](http://twitter.com/patoroco)).
 
 ## License
-`JMGBlockSegue` is available under the MIT license. See the [LICENSE file](LICENSE.md) for more info.
+`UIViewController+BlockSegue` is available under the MIT license. See the [LICENSE file](LICENSE.md) for more info.
