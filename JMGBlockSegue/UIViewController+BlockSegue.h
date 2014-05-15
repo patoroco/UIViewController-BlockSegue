@@ -27,6 +27,8 @@
 
 #import <UIKit/UIKit.h>
 
+#warning This pod has been renamed to UIViewController+BlockSegue. Please use that instead of this.
+
 typedef void (^UIViewControllerSegueBlock) (id sender, id destinationVC);
 
 @interface UIViewController (BlockSegue)
