@@ -6,4 +6,4 @@ before_install:
 language: objective-c
 
 script:
-- ./run_tests.sh 
+- ./run_tests.sh

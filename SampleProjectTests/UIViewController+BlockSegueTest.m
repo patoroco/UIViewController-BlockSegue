@@ -51,17 +51,17 @@ static NSString *const segueOneId = @"segue1";
         varTest = 1;
     }];
     [sut performSegueWithIdentifier:segueOneId sender:nil];
-    
+
     XCTAssertEqual(varTest, 1, @"Block should be executed");
 }
 
 - (void)testPerformSegueWithBlock {
     __block int varTest = 0;
- 
+
     [sut performSegueWithIdentifier:segueOneId sender:nil withBlock:^(id sender, id destinationVC, UIStoryboardSegue *segue) {
         varTest = 1;
     }];
-    
+
     XCTAssertEqual(varTest, 1, @"Block should be executed");
 }
 
@@ -94,18 +94,18 @@ static NSString *const segueOneId = @"segue1";
     id vcMock = [OCMockObject partialMockForObject:sut];
     [vcMock configureSegue:segueOneId withBlock:nil];
     [vcMock performSegueWithIdentifier:segueOneId sender:nil];
-    
+
     [[vcMock expect] prepareForSegue:nil sender:nil];
-    
+
     XCTAssertThrows([vcMock verify], @"If block is nil, prepareForSegue isn't called");
 }
 
 - (void)testPerformSegueWithBlockNil {
     id vcMock = [OCMockObject partialMockForObject:sut];
     [vcMock performSegueWithIdentifier:segueOneId sender:nil withBlock:nil];
-    
+
     [[vcMock expect] prepareForSegue:nil sender:nil];
-    
+
     XCTAssertThrows([vcMock verify], @"If block is nil, prepareForSegue isn't called");
 }
 

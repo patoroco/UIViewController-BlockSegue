@@ -1,7 +1,7 @@
 /*
  Copyright (c) 2014 Jorge Maroto García
  http://maroto.me
- 
+
  Permission is hereby granted, free of charge, to any
  person obtaining a copy of this software and associated
  documentation files (the "Software"), to deal in the
@@ -10,11 +10,11 @@
  distribute, sublicense, and/or sell copies of the
  Software, and to permit persons to whom the Software is
  furnished to do so, subject to the following conditions:
- 
+
  The above copyright notice and this permission notice
  shall be included in all copies or substantial portions of
  the Software.
- 
+
  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
  KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
  WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
@@ -38,7 +38,7 @@ void BlockSegue(void) {
 
     SEL originalSel = @selector(prepareForSegue:sender:);
     SEL swizzledSel = @selector(jmg_prepareForSegue:sender:);
-    
+
     Method originalMethod = class_getInstanceMethod(currentClass, originalSel);
     IMP swizzledImplementation = class_getMethodImplementation(currentClass, swizzledSel);
 
@@ -50,12 +50,12 @@ void BlockSegue(void) {
     if (segue.identifier == nil) {
         return;
     }
-    
+
     if (!self.jmg_dictionaryBlock || !self.jmg_dictionaryBlock[segue.identifier]) {
         NSLog(@"Segue identifier '%@' doesn't exist", segue.identifier);
         return;
     }
-    
+
     UIViewControllerSegueBlock segueBlock = self.jmg_dictionaryBlock[segue.identifier];
     segueBlock(sender, segue.destinationViewController, segue);
 }
@@ -68,7 +68,7 @@ void BlockSegue(void) {
     if (!self.jmg_dictionaryBlock) {
         objc_setAssociatedObject(self, UIViewControllerDictionaryBlockKey, [NSMutableDictionary dictionary], OBJC_ASSOCIATION_RETAIN);
     }
-    
+
     return self.jmg_dictionaryBlock;
 }
 
@@ -81,7 +81,7 @@ void BlockSegue(void) {
     if (!block) {
         return ;
     }
-    
+
     NSMutableDictionary *dBlocks = self.jmg_dictionaryBlock ?: [self jmg_createDictionaryBlock];
     [dBlocks setObject:block forKey:identifier];
 }
@@ -94,7 +94,7 @@ void BlockSegue(void) {
     if (!block) {
         return ;
     }
-    
+
     [self configureSegue:identifier withBlock:block];
     [self performSegueWithIdentifier:identifier sender:sender];
 }

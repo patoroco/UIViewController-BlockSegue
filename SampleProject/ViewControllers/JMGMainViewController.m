@@ -16,7 +16,7 @@
 
 -(void)viewDidLoad {
     [super viewDidLoad];
-    
+
     [self configureSegue:@"segue1" withBlock:^(id sender, id destinationVC, UIStoryboardSegue *segue) {
         NSLog(@"Segue configured fired from storyboard");
     }];
