@@ -47,7 +47,7 @@ static NSString *const segueOneId = @"segue1";
 - (void)testConfigureSegueWithBlock {
     __block int varTest = 0;
 
-    [sut configureSegue:segueOneId withBlock:^(id sender, id destinationVC) {
+    [sut configureSegue:segueOneId withBlock:^(id sender, id destinationVC, UIStoryboardSegue *segue) {
         varTest = 1;
     }];
     [sut performSegueWithIdentifier:segueOneId sender:nil];
@@ -58,7 +58,7 @@ static NSString *const segueOneId = @"segue1";
 - (void)testPerformSegueWithBlock {
     __block int varTest = 0;
  
-    [sut performSegueWithIdentifier:segueOneId sender:nil withBlock:^(id sender, id destinationVC) {
+    [sut performSegueWithIdentifier:segueOneId sender:nil withBlock:^(id sender, id destinationVC, UIStoryboardSegue *segue) {
         varTest = 1;
     }];
     
@@ -71,7 +71,7 @@ static NSString *const segueOneId = @"segue1";
 #pragma mark Nil identifier
 - (void)testConfigureWithSegueIdNil {
     XCTAssertThrowsSpecificNamed(
-         [sut configureSegue:nil withBlock:^(id sender, id destinationVC) {}],
+         [sut configureSegue:nil withBlock:^(id sender, id destinationVC, UIStoryboardSegue *segue) {}],
                      NSException,
                      NSInvalidArgumentException,
                      @"This should raise an excepcion like as original perform method"
@@ -82,7 +82,7 @@ static NSString *const segueOneId = @"segue1";
     XCTAssertThrowsSpecificNamed(
          [sut performSegueWithIdentifier:nil
                       sender:nil
-                   withBlock:^(id sender, id destinationVC) {}],
+                   withBlock:^(id sender, id destinationVC, UIStoryboardSegue *segue) {}],
                      NSException,
                      NSInvalidArgumentException,
                      @"This should raise an excepcion like as original perform method"
