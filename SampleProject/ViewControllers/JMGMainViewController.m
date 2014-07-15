@@ -17,7 +17,7 @@
 -(void)viewDidLoad {
     [super viewDidLoad];
     
-    [self configureSegue:@"segue1" withBlock:^(id sender, id destinationVC) {
+    [self configureSegue:@"segue1" withBlock:^(id sender, id destinationVC, UIStoryboardSegue *segue) {
         NSLog(@"Segue configured fired from storyboard");
     }];
 }
@@ -32,7 +32,7 @@
 
     [self performSegueWithIdentifier:@"segue2"
                               sender:nil
-                           withBlock:^(id sender, JMGSecondViewController *destinationVC) {
+                           withBlock:^(id sender, JMGSecondViewController *destinationVC, UIStoryboardSegue *segue) {
                                NSLog(@"Segue configured inline");
                                destinationVC.user = tmpUser;
                            }];

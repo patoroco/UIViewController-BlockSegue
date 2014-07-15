@@ -57,7 +57,7 @@ void BlockSegue(void) {
     }
     
     UIViewControllerSegueBlock segueBlock = self.jmg_dictionaryBlock[segue.identifier];
-    segueBlock(sender, segue.destinationViewController);
+    segueBlock(sender, segue.destinationViewController, segue);
 }
 
 -(NSMutableDictionary *)jmg_dictionaryBlock {

@@ -27,7 +27,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void (^UIViewControllerSegueBlock) (id sender, id destinationVC);
+typedef void (^UIViewControllerSegueBlock) (id sender, id destinationVC, UIStoryboardSegue *segue);
 
 @interface UIViewController (BlockSegue)
 
