@@ -23,6 +23,8 @@ Are you tired to write an ugly and big `-prepareForSegue:(UIStoryboardSegue *)se
 
 Check UIViewController+BlockSegue and enjoy **defining a block** which will be executed to prepare segue **in the same place which you call to `performSegue`**.
 
+**IMPORTANT:** if you override `-prepareForSegue:sender:` method, BlockSegue won't be performed in these UIViewController.
+
 
 ## Install
 
