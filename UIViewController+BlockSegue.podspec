@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "UIViewController+BlockSegue"
-  s.version      = "0.2.2"
+  s.version      = "1.0.0"
   s.summary      = "UIViewController category which allows to use a block to prepare segue instead of ugly -prepareForSegue method."
   s.homepage     = "https://github.com/patoroco/UIViewController-BlockSegue"
   s.license      = { :type => 'MIT', :file => 'LICENSE.md' }
