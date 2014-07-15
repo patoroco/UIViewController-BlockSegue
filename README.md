@@ -46,7 +46,7 @@ Perform segue and configure the block which is executed in the same sentence.
 
 ```objective-c
 
-[self performSegueWithIdentifier:@"segueIdentifier" sender:nil withBlock:^(id sender, id destinationVC) {
+[self performSegueWithIdentifier:@"segueIdentifier" sender:nil withBlock:^(id sender, id destinationVC, UIStoryboardSegue *segue) {
     NSLog(@"Segue configured inline");
     destinationVC.user = tmpUser;
 }];
@@ -60,7 +60,7 @@ Configure segue block independently of his execution, this way could be called o
 
 ```objective-c
 
-[self configureSegue:@"segueIdentifier" withBlock:^(id sender, id destinationVC) {
+[self configureSegue:@"segueIdentifier" withBlock:^(id sender, id destinationVC, UIStoryboardSegue *segue); {
     NSLog(@"I'm a block fired with the segue!");
 }];
 ```
