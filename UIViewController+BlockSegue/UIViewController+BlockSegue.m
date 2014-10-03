@@ -92,7 +92,11 @@ void BlockSegue(void) {
     }
 
     if (!block) {
-        return ;
+        #if DEBUG
+            NSLog(@"performSegueWithIdentifier %@ withBlock not configured. Using default...", identifier);
+        #endif
+        // Set a default configure block to allow segue to continue otherwise segue won't be performed...
+        block = ^(id sender, id destinationVC, UIStoryboardSegue *segue) { /* Do nothing */ };
     }
 
     [self configureSegue:identifier withBlock:block];
