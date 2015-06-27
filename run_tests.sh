@@ -1,2 +1,2 @@
 #!/bin/bash
-xcodebuild -workspace SampleProject.xcworkspace -scheme SampleProject -sdk iphonesimulator7.1 test | xcpretty -c && exit ${PIPESTATUS[0]}
+xcodebuild -workspace SampleProject.xcworkspace -scheme SampleProject -sdk iphonesimulator test | xcpretty -c && exit ${PIPESTATUS[0]}
