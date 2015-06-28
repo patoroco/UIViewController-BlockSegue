@@ -83,7 +83,7 @@ I added some tests as personal exercise, but if you want run them, exec script (
 
 
 ## Author
-- Jorge Maroto ([@patoroco](http://twitter.com/patoroco)).
+- Jorge Maroto ([@patoroco](http://twitter.com/patoroco))
 
 ## License
 `UIViewController+BlockSegue` is available under the MIT license. See the [LICENSE file](LICENSE.md) for more info.
