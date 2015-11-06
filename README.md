@@ -2,7 +2,7 @@
 ![Cocoa Pods Platform](https://cocoapod-badges.herokuapp.com/p/UIViewController+BlockSegue/badge.png)
 [![Build Status](https://travis-ci.org/patoroco/UIViewController-BlockSegue.svg)](https://travis-ci.org/patoroco/UIViewController-BlockSegue)
 
-Are you tired to write an ugly and big `-prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender:` method like that?
+Are you tired of writing an ugly and big `-prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender:` method like that?
 
 ```objective-c
 
