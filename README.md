@@ -1,5 +1,5 @@
-![Cocoa Pods Version](https://cocoapod-badges.herokuapp.com/v/UIViewController+BlockSegue/badge.png)
-![Cocoa Pods Platform](https://cocoapod-badges.herokuapp.com/p/UIViewController+BlockSegue/badge.png)
+![CocoaPods Version](https://cocoapod-badges.herokuapp.com/v/UIViewController+BlockSegue/badge.png)
+![CocoaPods Platform](https://cocoapod-badges.herokuapp.com/p/UIViewController+BlockSegue/badge.png)
 [![Build Status](https://travis-ci.org/patoroco/UIViewController-BlockSegue.svg)](https://travis-ci.org/patoroco/UIViewController-BlockSegue)
 
 Are you tired of writing an ugly and big `-prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender:` method like that?
