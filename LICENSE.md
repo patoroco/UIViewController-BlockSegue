@@ -1,4 +1,4 @@
-Copyright (c) 2014 Jorge Maroto García ([http://jorgemaroto.es](http://jorgemaroto.es))
+Copyright (c) 2014 Jorge Maroto García maroto.me
 
 Permission is hereby granted, free of charge, to any
 person obtaining a copy of this software and associated
